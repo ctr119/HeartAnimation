@@ -22,6 +22,7 @@ struct ConfettiModifier<T: ShapeStyle>: ViewModifier {
     
     private let speed: CGFloat = 0.3
     private let areaOffset: CGFloat = 10
+    private let confettiOffset: CGFloat = 3
     
     var color: T
     var size: Double
@@ -53,7 +54,7 @@ struct ConfettiModifier<T: ShapeStyle>: ViewModifier {
                                 .rotationEffect(.degrees(24 * Double(i)))
                                 .offset(
                                     x: (proxy.size.width - size) / 2,
-                                    y: (proxy.size.height - size) / 2 - (3)
+                                    y: (proxy.size.height - size) / 2 - (confettiOffset)
                                 )
                                 .opacity(confettiIsHidden ? 0 : 1)
                         }
