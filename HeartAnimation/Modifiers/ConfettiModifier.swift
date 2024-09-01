@@ -73,7 +73,7 @@ struct ConfettiModifier<T: ShapeStyle>: ViewModifier {
                 withAnimation(.easeIn(duration: speed)){
                     circleGrowingSize = 1
                 }
-                withAnimation(.easeOut(duration: speed).delay(speed)) {
+                withAnimation(.easeOut(duration: speed).delay(speed * 0.75)) {
                     strokeMultiplier = 0.00001
                 }
                 
