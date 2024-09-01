@@ -23,7 +23,7 @@ struct ContentView: View {
                         .transition(
                             .confetti(
                                 color: .orange.gradient,
-                                size: 3
+                                size: 9
                             )
                         )
                 } else {

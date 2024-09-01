@@ -53,7 +53,7 @@ struct ConfettiModifier<T: ShapeStyle>: ViewModifier {
                                 .rotationEffect(.degrees(24 * Double(i)))
                                 .offset(
                                     x: (proxy.size.width - size) / 2,
-                                    y: (proxy.size.height - size) / 2
+                                    y: (proxy.size.height - size) / 2 - (3)
                                 )
                                 .opacity(confettiIsHidden ? 0 : 1)
                         }
