@@ -5,17 +5,24 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 60) {
-            Button(action: {
+            heartButton
+        }
+        .padding()
+    }
+    
+    private var heartButton: some View {
+        Button(
+            action: {
                 isFavourite.toggle()
             },
-                   label: {
+            label: {
                 if isFavourite {
                     Image(systemName: "heart")
-                        .foregroundStyle(.rainbowAngularGradient())
+                        .foregroundStyle(.orange.gradient)
                         .symbolVariant(.fill)
                         .transition(
                             .confetti(
-                                color: .rainbowAngularGradient(),
+                                color: .orange.gradient,
                                 size: 3
                             )
                         )
@@ -23,10 +30,9 @@ struct ContentView: View {
                     Image(systemName: "heart")
                         .foregroundStyle(.gray)
                 }
-            })
-            .font(.system(size: 92))
-        }
-        .padding()
+            }
+        )
+        .font(.system(size: 92))
     }
 }
 
