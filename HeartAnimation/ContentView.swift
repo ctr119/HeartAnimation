@@ -3,7 +3,6 @@ import SwiftUI
 struct ContentView: View {
     @State private var isFavourite = false
     
-    private let theColor = Color.orange
     private let fonts = [
         Font.body, 
         Font.largeTitle,
@@ -19,11 +18,11 @@ struct ContentView: View {
                        label: {
                     if isFavourite {
                         Image(systemName: "heart")
-                            .foregroundStyle(theColor)
+                            .foregroundStyle(.rainbowAngularGradient())
                             .symbolVariant(.fill)
                             .transition(
                                 .confetti(
-                                    color: theColor.gradient,
+                                    color: .rainbowAngularGradient(),
                                     size: 3
                                 )
                             )

@@ -16,6 +16,7 @@
 		20908FE82C7BE000008E2F61 /* HeartAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908FE72C7BE000008E2F61 /* HeartAnimationUITestsLaunchTests.swift */; };
 		20908FF62C8388F9008E2F61 /* ConfettiModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908FF52C8388F9008E2F61 /* ConfettiModifier.swift */; };
 		20908FF92C83896F008E2F61 /* AnyTransition+Confetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908FF82C83896F008E2F61 /* AnyTransition+Confetti.swift */; };
+		20908FFB2C84AED6008E2F61 /* ShapeStyle+Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908FFA2C84AED6008E2F61 /* ShapeStyle+Gradients.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		20908FE72C7BE000008E2F61 /* HeartAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		20908FF52C8388F9008E2F61 /* ConfettiModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiModifier.swift; sourceTree = "<group>"; };
 		20908FF82C83896F008E2F61 /* AnyTransition+Confetti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Confetti.swift"; sourceTree = "<group>"; };
+		20908FFA2C84AED6008E2F61 /* ShapeStyle+Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle+Gradients.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				20908FF82C83896F008E2F61 /* AnyTransition+Confetti.swift */,
+				20908FFA2C84AED6008E2F61 /* ShapeStyle+Gradients.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				20908FCC2C7BDFFF008E2F61 /* ContentView.swift in Sources */,
 				20908FF92C83896F008E2F61 /* AnyTransition+Confetti.swift in Sources */,
+				20908FFB2C84AED6008E2F61 /* ShapeStyle+Gradients.swift in Sources */,
 				20908FCA2C7BDFFF008E2F61 /* HeartAnimationApp.swift in Sources */,
 				20908FF62C8388F9008E2F61 /* ConfettiModifier.swift in Sources */,
 			);
