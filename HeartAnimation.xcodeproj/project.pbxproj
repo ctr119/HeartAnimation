@@ -14,6 +14,8 @@
 		20908FDC2C7BE000008E2F61 /* HeartAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908FDB2C7BE000008E2F61 /* HeartAnimationTests.swift */; };
 		20908FE62C7BE000008E2F61 /* HeartAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908FE52C7BE000008E2F61 /* HeartAnimationUITests.swift */; };
 		20908FE82C7BE000008E2F61 /* HeartAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908FE72C7BE000008E2F61 /* HeartAnimationUITestsLaunchTests.swift */; };
+		20908FF62C8388F9008E2F61 /* ConfettiModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908FF52C8388F9008E2F61 /* ConfettiModifier.swift */; };
+		20908FF92C83896F008E2F61 /* AnyTransition+Confetti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20908FF82C83896F008E2F61 /* AnyTransition+Confetti.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		20908FE12C7BE000008E2F61 /* HeartAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20908FE52C7BE000008E2F61 /* HeartAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimationUITests.swift; sourceTree = "<group>"; };
 		20908FE72C7BE000008E2F61 /* HeartAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20908FF52C8388F9008E2F61 /* ConfettiModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiModifier.swift; sourceTree = "<group>"; };
+		20908FF82C83896F008E2F61 /* AnyTransition+Confetti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition+Confetti.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		20908FC82C7BDFFF008E2F61 /* HeartAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				20908FF72C83895A008E2F61 /* Extensions */,
+				20908FF42C8388E0008E2F61 /* Modifiers */,
 				20908FC92C7BDFFF008E2F61 /* HeartAnimationApp.swift */,
 				20908FCB2C7BDFFF008E2F61 /* ContentView.swift */,
 				20908FCD2C7BE000008E2F61 /* Assets.xcassets */,
@@ -127,6 +133,22 @@
 				20908FE72C7BE000008E2F61 /* HeartAnimationUITestsLaunchTests.swift */,
 			);
 			path = HeartAnimationUITests;
+			sourceTree = "<group>";
+		};
+		20908FF42C8388E0008E2F61 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				20908FF52C8388F9008E2F61 /* ConfettiModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		20908FF72C83895A008E2F61 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				20908FF82C83896F008E2F61 /* AnyTransition+Confetti.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +282,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20908FCC2C7BDFFF008E2F61 /* ContentView.swift in Sources */,
+				20908FF92C83896F008E2F61 /* AnyTransition+Confetti.swift in Sources */,
 				20908FCA2C7BDFFF008E2F61 /* HeartAnimationApp.swift in Sources */,
+				20908FF62C8388F9008E2F61 /* ConfettiModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
