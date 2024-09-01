@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  HeartAnimation
-//
-//  Created by Víctor Barrios Sánchez on 25/8/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -22,13 +15,17 @@ struct ContentView: View {
             ForEach(fonts, id: \.self) {
                 Button(action: {
                     isFavourite.toggle()
-                }, label: {
+                },
+                       label: {
                     if isFavourite {
                         Image(systemName: "heart")
                             .foregroundStyle(theColor)
                             .symbolVariant(.fill)
                             .transition(
-                                .confetti(color: theColor, size: 3)
+                                .confetti(
+                                    color: theColor.gradient,
+                                    size: 3
+                                )
                             )
                     } else {
                         Image(systemName: "heart")

@@ -15,7 +15,7 @@ extension AnyTransition {
         )
     }
     
-    static func confetti(color: Color = .blue, size: Double = 3) -> AnyTransition {
+    static func confetti<T: ShapeStyle>(color: T = .blue, size: Double = 3) -> AnyTransition {
         .modifier(
             active: ConfettiModifier(color: color, size: size),
             identity: ConfettiModifier(color: color, size: size)

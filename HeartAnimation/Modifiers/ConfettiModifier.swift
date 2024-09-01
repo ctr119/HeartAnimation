@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ConfettiModifier: ViewModifier {
+struct ConfettiModifier<T: ShapeStyle>: ViewModifier {
     // Gorwing circle
     @State private var circleGrowingSize = 0.00001
     @State private var strokeMultiplier = 1.0
@@ -23,7 +23,7 @@ struct ConfettiModifier: ViewModifier {
     private let speed: CGFloat = 0.3
     private let areaOffset: CGFloat = 10
     
-    var color: Color
+    var color: T
     var size: Double
     
     func body(content: Content) -> some View {
